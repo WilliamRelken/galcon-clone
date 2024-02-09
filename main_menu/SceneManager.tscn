@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bueax3dqig5io"]
+
+[ext_resource type="Script" path="res://main_menu/SceneManager.gd" id="1_0fp5s"]
+[ext_resource type="Texture2D" uid="uid://jtbjqwxu5hsd" path="res://main_menu/blue_nebula.png" id="1_0ysp1"]
+[ext_resource type="PackedScene" uid="uid://dmp2jl5b81v8j" path="res://main_menu/MainMenu.tscn" id="4_fl64v"]
+
+[node name="SceneManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fp5s")
+scene = ExtResource("4_fl64v")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0ysp1")
+stretch_mode = 1
